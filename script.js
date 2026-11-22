@@ -179,7 +179,7 @@
   if (year) year.textContent = String(new Date().getFullYear());
 
   console.log(
-    "%cGanesh Patil%c — backend engineer\nOpen to freelance work: gpatil54403081@gmail.com",
+    "%cGanesh Patil%c — software engineer\nLet's build something: gpatil54403081@gmail.com",
     "font-family:monospace;font-size:13px;font-weight:700;color:#8b93ff",
     "font-family:monospace;font-size:11px;color:#98a1b8"
   );
