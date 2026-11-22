@@ -32,21 +32,50 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ganesh Patil",
-    "jobTitle": "Software Engineer",
-    "description": "Software engineer building Java microservices, Spring Boot APIs, and responsive web applications.",
-    "url": "https://ganesh5440.github.io/",
-    "email": "gpatil54403081@gmail.com",
-    "telephone": "+91-7666516880",
-    "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN" },
-    "worksFor": { "@type": "Organization", "name": "Amdocs" },
-    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Dr. D. Y. Patil Institute of Engineering, Management and Research" },
-    "sameAs": [
-      "https://github.com/ganesh5440",
-      "https://www.linkedin.com/in/ganesh-patil-047bb1282/"
-    ],
-    "knowsAbout": ["Java", "Spring Boot", "Microservices", "REST APIs", "MySQL", "Docker", "JUnit", "Hibernate", "React", "JavaScript", "Web Development"]
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ganesh5440.github.io/#website",
+        "url": "https://ganesh5440.github.io/",
+        "name": "Ganesh Patil — Software Engineer, Pune",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://ganesh5440.github.io/#profile",
+        "url": "https://ganesh5440.github.io/",
+        "name": "Ganesh Patil — Software Engineer",
+        "inLanguage": "en",
+        "dateModified": "2026-11-23",
+        "isPartOf": { "@id": "https://ganesh5440.github.io/#website" },
+        "mainEntity": {
+          "@type": "Person",
+          "@id": "https://ganesh5440.github.io/#person",
+          "name": "Ganesh Patil",
+          "givenName": "Ganesh",
+          "familyName": "Patil",
+          "jobTitle": "Software Engineer",
+          "description": "Software engineer building Java microservices, Spring Boot APIs, and responsive web applications.",
+          "url": "https://ganesh5440.github.io/",
+          "image": "https://ganesh5440.github.io/assets/img/og.png",
+          "email": "gpatil54403081@gmail.com",
+          "telephone": "+91-7666516880",
+          "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+          "worksFor": { "@type": "Organization", "name": "Amdocs", "url": "https://www.amdocs.com/" },
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "Dr. D. Y. Patil Institute of Engineering, Management and Research", "url": "https://www.dypiemr.ac.in/" },
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Software Engineer",
+            "occupationLocation": { "@type": "City", "name": "Pune" }
+          },
+          "sameAs": [
+            "https://github.com/ganesh5440",
+            "https://www.linkedin.com/in/ganesh-patil-047bb1282/"
+          ],
+          "knowsAbout": ["Java", "Spring Boot", "Microservices", "REST APIs", "MySQL", "Docker", "JUnit", "Hibernate", "React", "JavaScript", "Web Development"]
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -694,8 +723,8 @@
       </div>
       <p class="footer-note">Built from scratch. Hosted free on GitHub Pages.</p>
       <div class="footer-links">
-        <a href="https://github.com/ganesh5440" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/ganesh-patil-047bb1282/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/ganesh5440" target="_blank" rel="noopener me">GitHub</a>
+        <a href="https://www.linkedin.com/in/ganesh-patil-047bb1282/" target="_blank" rel="noopener me">LinkedIn</a>
         <a href="assets/Ganesh-Patil-Resume.pdf" download="Ganesh-Patil-Resume.pdf">Resume</a>
       </div>
     </div>
