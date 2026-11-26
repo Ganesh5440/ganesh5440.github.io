@@ -539,33 +539,39 @@ section {
 .hero-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
-  margin-top: 24px;
+  gap: 8px;
+  margin-top: 22px;
 }
 
 .pill {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 5px 11px;
+  min-height: 34px;
+  padding: 6px 11px;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.025);
   font-size: 0.74rem;
-  color: #aab2c8;
+  font-weight: 500;
+  color: #b6bfd3;
   letter-spacing: 0.01em;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
 }
 
-.dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
+.pill:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--brand) 52%, var(--border));
+  background: color-mix(in srgb, var(--brand) 8%, rgba(255, 255, 255, 0.025));
+  color: var(--text);
 }
-.dot-java { background: #f89820; }
-.dot-spring { background: #6db33f; }
-.dot-react { background: #61dafb; }
-.dot-ms { background: #8b93ff; }
-.dot-db { background: #63c9ff; }
+
+.pill-logo {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  object-fit: contain;
+}
 
 .hero h1 {
   margin-top: 20px;
